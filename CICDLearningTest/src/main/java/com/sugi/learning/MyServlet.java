@@ -47,7 +47,7 @@ public class MyServlet extends HttpServlet {
 
 		response.sendRedirect("printout.jsp");
 		
-		System.out.println("Do Post completed");
+		System.out.println("Do Post completed ");
 		
 		System.out.println("Completed Successfully!!!!");
 	}
