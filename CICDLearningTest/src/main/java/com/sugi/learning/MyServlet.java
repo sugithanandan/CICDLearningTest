@@ -46,6 +46,8 @@ public class MyServlet extends HttpServlet {
 		request.getSession().setAttribute("phone", phone);
 
 		response.sendRedirect("printout.jsp");
+		
+		System.out.println("Do Post completed");
 	}
 
 }
