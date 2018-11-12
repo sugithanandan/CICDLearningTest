@@ -35,6 +35,8 @@ public class MyServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		System.out.println("In Do Post");
 		String name = request.getParameter("name");
 		String add = request.getParameter("add");
 		String phone = request.getParameter("phone");
