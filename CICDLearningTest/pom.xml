@@ -38,4 +38,17 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>deployment</id>
+			<name>CICDLearning Release</name>
+			<url>http://localhost:8091/repository/cicdlearningrelease/</url>
+		</repository>
+		<snapshotRepository>
+			<id>deployment</id>
+			<name>CICDLearning Release snapshot</name>
+			<url>http://localhost:8091/repository/cicdlearningsnapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
