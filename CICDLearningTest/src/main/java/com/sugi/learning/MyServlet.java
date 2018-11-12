@@ -50,6 +50,8 @@ public class MyServlet extends HttpServlet {
 		System.out.println("Do Post completed Successfully!!!");
 		
 		System.out.println("Completed Successfully!!!!");
+		
+		System.out.println("Demo Test");
 	}
 
 }
