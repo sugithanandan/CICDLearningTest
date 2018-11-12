@@ -11,6 +11,7 @@ public class MyJavaTest {
 	public void displayTest()
 	{
 		System.out.println("Hi How are you!!!");
+		System.out.println("I am fine");
 	}
 
 }
