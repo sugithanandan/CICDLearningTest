@@ -55,5 +55,19 @@ public class MyServlet extends HttpServlet {
 		
 		System.out.println("Demo 2");
 	}
+	
+	public int addTest(int a ,int b)
+	{
+		
+		return a+b;
+
+	}
+	
+	public int subTest(int a ,int b)
+	{
+		
+		return a-b;
+
+	}
 
 }
