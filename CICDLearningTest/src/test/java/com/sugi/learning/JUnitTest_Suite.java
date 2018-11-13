@@ -7,6 +7,5 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({ MyServletTest.class, MyServletTest2.class })
 public class JUnitTest_Suite {
-	
 
 }
