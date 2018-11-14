@@ -49,12 +49,12 @@
 		<repository>
 			<id>deployment</id>
 			<name>CICDLearning Release</name>
-			<url>http://localhost:8091/repository/cicdlearningrelease/</url>
+			<url>http://localhost:8082/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>deployment</id>
 			<name>CICDLearning Release snapshot</name>
-			<url>http://localhost:8091/repository/cicdlearningsnapshot/</url>
+			<url>http://localhost:8082/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
