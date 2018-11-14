@@ -4,7 +4,7 @@
 
 	<groupId>com.sugi.learning</groupId>
 	<artifactId>CICDLearningTest</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT.${BUILD_ID}</version>
 	<packaging>war</packaging>
 
 	<name>CICDLearningTest</name>
