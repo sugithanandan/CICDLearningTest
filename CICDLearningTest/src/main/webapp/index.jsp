@@ -1,22 +1,76 @@
+<%@ page import="java.util.Date"%>
+<%@ page import="java.text.SimpleDateFormat"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>WebApp</title>
+<title>Welcome Page</title>
 </head>
+<%
+	Date today = new Date();
+	SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("MM/dd/yyyy");
+	String todayDate = DATE_FORMAT.format(today);
+%>
 <body>
-	<h1>Welcome Guys...Happy Learning!!!!!</h1>
-	<h2>Good Morning</h2>
+	<h1><marquee>Welcome Guys...Happy Learning!!!!!</marquee></h1>
+	<h2>
+		Today's date is :
+		<%=todayDate%></h2>
 	<h3>Enter your Details:</h3>
-	
-	<form method="post" action="MyServlet">
-	Name     : <input type="text" name="name">
-	Address  : <input type="text" name="add"> 
-	Phone No : <input type="text" name="phone">
-	<br></br>
-	<center><input type="submit" value="Send" ></center>
+
+
+	<form name="dataform" method="post" action="MyFirstServlet">
+		<table>
+
+			<tbody>
+
+				<tr>
+					<td>First Name :</td>
+					<td><input type="text" name="firstname" value="" size="50" /></td>
+				</tr>
+
+				<tr>
+					<td>Last Name :</td>
+					<td><input type="text" name="lasttname" value="" size="50" /></td>
+				</tr>				
+
+				<tr>
+					<td>Gender :</td>
+					<td><input type="radio" name="gender" value="Male" size="50" />Male 
+					<input type="radio" name="gender" value="Female" size="50" /> Female
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Date of Birth :</td>
+					<td><input type="text" name="dob" value="" size="50" /></td>
+				</tr>				
+				
+				<tr>
+					<td>Address :</td>
+					<td><input type="text" name="address" value="" size="50" /></td>
+				</tr>
+				
+				<tr>
+					<td>Email Address :</td>
+					<td><input type="text" name="email" value="" size="50" /></td>
+				</tr>
+				
+				<tr>
+					<td>Phone Number :</td>
+					<td><input type="text" name="phone" value="" size="50" /></td>
+				</tr>
+
+			</tbody>
+
+		</table>
+		
+		<center>
+			<input type="reset" value="Reset" name ="reset">
+			<input type="submit" value="Submit" name="submit">
+		</center>
 	</form>
 </body>
 </html>

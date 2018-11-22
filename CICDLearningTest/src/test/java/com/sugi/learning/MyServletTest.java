@@ -8,7 +8,7 @@ public class MyServletTest {
 
 	@Test
 	public void test_1() {
-		MyServlet servlet = new MyServlet();
+		MyFirstServlet servlet = new MyFirstServlet();
 		assertEquals(servlet.addTest(10, 20), 30);
 	}
 
