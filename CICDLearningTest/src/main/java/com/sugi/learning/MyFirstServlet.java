@@ -16,8 +16,7 @@ public class MyFirstServlet extends HttpServlet {
 	 * @see HttpServlet#HttpServlet()
 	 */
 	public MyFirstServlet() {
-		super();
-		// TODO Auto-generated constructor stub
+		super();		
 	}
 
 	/**
@@ -25,9 +24,8 @@ public class MyFirstServlet extends HttpServlet {
 	 *      response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+			throws ServletException, IOException {		
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
