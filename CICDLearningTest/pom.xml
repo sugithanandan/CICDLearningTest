@@ -7,8 +7,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>CICDLearningTest</name>
+	<name>${artifactId}-${version}-${}</name>
 	<url>http://maven.apache.org</url>
+	
 
 	<dependencies>
 		<dependency>
@@ -47,7 +48,8 @@
 					<path>/</path>
 				</configuration>
 			</plugin>
-		</plugins>
+		</plugins>		
+		
 	</build>
 
 	<distributionManagement>

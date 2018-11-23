@@ -14,11 +14,7 @@
     	<display-name>MyFirstServlet</display-name>
     	<servlet-name>MyFirstServlet</servlet-name>
     	<servlet-class>com.sugi.learning.MyFirstServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-    	<servlet-name>MyServlet</servlet-name>
-    	<url-pattern>/MyServlet</url-pattern>
-    </servlet-mapping>
+    </servlet>   
     <servlet-mapping>
     	<servlet-name>MyFirstServlet</servlet-name>
     	<url-pattern>/MyFirstServlet</url-pattern>
